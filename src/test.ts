@@ -41,7 +41,7 @@ async function initiateFlowRun(value:string) {
   
   async function execute() {
     try {
-      const info = await run(); // If `run` is asynchronous
+      const info = await run(); 
       const finalData = JSON.stringify(info);
       initiateFlowRun(finalData);
     } catch (error) {
@@ -50,6 +50,6 @@ async function initiateFlowRun(value:string) {
   }
 
   execute();
-  // Call the function
+
   
   

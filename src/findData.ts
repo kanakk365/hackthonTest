@@ -2,26 +2,7 @@ import { connectToDatabase, Post } from "./connect";
 import { Db, Collection } from "@datastax/astra-db-ts";
 import fs from "fs";
 
-/**
- * Creates a collection in the specified database with vectorization enabled.
- * The collection will use Nvidia's NV-Embed-QA embedding model
- * to generate vector embeddings for data in the collection.
- *
- * @param database - The instantiated object that represents the database where the collection will be created.
- * @param collectionName - The name of the collection to create.
- * @returns A promise that resolves to the created collection.
- */
 
-/**
- * Uploads data from a file containing a JSON array to the specified collection.
- * For each piece of data, a $vectorize field is added. The $vectorize value is
- * a string from which vector embeddings will be generated.
- *
- * @param collection - The instantiated object that represents the collection to upload the data to.
- * @param dataFilePath - The path to a JSON file containing a JSON array.
- * @param embeddingStringCreator - A function to create the string for which vector embeddings will be generated.
- * @returns {Promise<void>} A promise that resolves when the data has been uploaded.
- */
 
 const run = async ()=> {
   const database = connectToDatabase();
