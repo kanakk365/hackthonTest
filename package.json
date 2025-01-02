@@ -1,0 +1,28 @@
+{
+  "name": "astra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@datastax/astra-db-ts": "^1.5.0",
+    "axios": "^1.7.9",
+    "cassandra-driver": "^4.7.2",
+    "dotenv": "^16.4.7",
+    "eventsource": "^3.0.2",
+    "eventsource-polyfill": "^0.9.6",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/eventsource": "^1.1.15",
+    "@types/node": "^22.10.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,8 @@
+[
+  {"post_id":3,"post_type":"Static Image","likes":80,"shares":10,"comments":15},
+  {"post_id":2,"post_type":"Carousel","likes":120,"shares":20,"comments":40},
+  {"post_id":2,"post_type":"Carousel","likes":120,"shares":20,"comments":40},
+  {"post_id":6,"post_type":"Static Image","likes":90,"shares":15,"comments":20},
+  {"post_id":8,"post_type":"Carousel","likes":140,"shares":18,"comments":45},
+  {"post_id":8,"post_type":"Carousel","likes":140,"shares":18,"comments":45}
+]
