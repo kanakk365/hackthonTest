@@ -1,6 +1,6 @@
 import  run  from "./findData";
 
-async function initiateFlowRun(value:string) {
+async function initiateFlowRun(value: any) {
     const url = "https://api.langflow.astra.datastax.com/lf/ccf6615b-7615-419c-8f3c-d4d14fe37c89/api/v1/run/583f96d7-37df-4b76-9dd7-e4d367394dd5?stream=false";
   
     const headers = {
@@ -33,7 +33,7 @@ async function initiateFlowRun(value:string) {
   
       const data = await response.json();
       const finalV3=data.outputs[0].outputs
-      console.log("Flow Run Response:",finalV3[0].artifacts.message);
+      console.log(finalV3[0].artifacts.message);
     } catch (error) {
       console.error("Error initiating flow run:", error);
     }
@@ -44,6 +44,8 @@ async function initiateFlowRun(value:string) {
       const info = await run(); 
       const finalData = JSON.stringify(info);
       initiateFlowRun(finalData);
+
+
     } catch (error) {
       console.error('Error executing program:', error);
     }

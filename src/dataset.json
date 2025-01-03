@@ -1,8 +1,22 @@
 [
-  {"post_id":3,"post_type":"Static Image","likes":80,"shares":10,"comments":15},
-  {"post_id":2,"post_type":"Carousel","likes":120,"shares":20,"comments":40},
-  {"post_id":2,"post_type":"Carousel","likes":120,"shares":20,"comments":40},
-  {"post_id":6,"post_type":"Static Image","likes":90,"shares":15,"comments":20},
-  {"post_id":8,"post_type":"Carousel","likes":140,"shares":18,"comments":45},
-  {"post_id":8,"post_type":"Carousel","likes":140,"shares":18,"comments":45}
+  { "post_id": "1", "post_type": "carousel", "likes": 150, "shares": 20, "comments": 30, "date": "2025-01-01" },
+  { "post_id": "2", "post_type": "reel", "likes": 300, "shares": 50, "comments": 80, "date": "2025-01-02" },
+  { "post_id": "3", "post_type": "static", "likes": 100, "shares": 10, "comments": 15, "date": "2025-01-03" },
+  { "post_id": "4", "post_type": "carousel", "likes": 200, "shares": 30, "comments": 40, "date": "2025-01-04" },
+  { "post_id": "5", "post_type": "reel", "likes": 400, "shares": 60, "comments": 100, "date": "2025-01-05" },
+  { "post_id": "6", "post_type": "static", "likes": 120, "shares": 15, "comments": 20, "date": "2025-01-06" },
+  { "post_id": "7", "post_type": "carousel", "likes": 250, "shares": 35, "comments": 45, "date": "2025-01-07" },
+  { "post_id": "8", "post_type": "reel", "likes": 450, "shares": 75, "comments": 120, "date": "2025-01-08" },
+  { "post_id": "9", "post_type": "static", "likes": 140, "shares": 20, "comments": 25, "date": "2025-01-09" },
+  { "post_id": "10", "post_type": "carousel", "likes": 300, "shares": 40, "comments": 50, "date": "2025-01-10" },
+  { "post_id": "11", "post_type": "reel", "likes": 500, "shares": 90, "comments": 130, "date": "2025-01-11" },
+  { "post_id": "12", "post_type": "static", "likes": 160, "shares": 25, "comments": 30, "date": "2025-01-12" },
+  { "post_id": "13", "post_type": "carousel", "likes": 350, "shares": 50, "comments": 60, "date": "2025-01-13" },
+  { "post_id": "14", "post_type": "reel", "likes": 550, "shares": 100, "comments": 140, "date": "2025-01-14" },
+  { "post_id": "15", "post_type": "static", "likes": 180, "shares": 30, "comments": 35, "date": "2025-01-15" },
+  { "post_id": "16", "post_type": "carousel", "likes": 400, "shares": 60, "comments": 70, "date": "2025-01-16" },
+  { "post_id": "17", "post_type": "reel", "likes": 600, "shares": 110, "comments": 150, "date": "2025-01-17" },
+  { "post_id": "18", "post_type": "static", "likes": 200, "shares": 35, "comments": 40, "date": "2025-01-18" },
+  { "post_id": "19", "post_type": "carousel", "likes": 450, "shares": 70, "comments": 80, "date": "2025-01-19" },
+  { "post_id": "20", "post_type": "reel", "likes": 650, "shares": 120, "comments": 160, "date": "2025-01-20" }
 ]

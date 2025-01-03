@@ -44,13 +44,42 @@ async function uploadJsonData(
   console.log(`Inserted ${inserted.insertedCount} items.`);
 }
 
+async function getOrCreateCollection(
+  database: Db,
+  collectionName: string,
+): Promise<Collection<Post>> {
+  try {
+    
+    const collection = await database.collection<Post>(collectionName);
+    console.log(`Using existing collection ${collection.keyspace}.${collection.collectionName}`);
+    return collection;
+  } catch (error: any) {
+    if (error.message.includes("not found")) {
+     
+      console.log(`Collection ${collectionName} does not exist. Creating it...`);
+      const newCollection = await database.createCollection<Post>(collectionName, {
+        vector: {
+          service: {
+            provider: "nvidia",
+            modelName: "NV-Embed-QA",
+          },
+        },
+      });
+      console.log(
+        `Created collection ${newCollection.keyspace}.${newCollection.collectionName}`
+      );
+      return newCollection;
+    } else {
+      throw new Error(`Error retrieving or creating collection: ${error.message}`);
+    }
+  }
+}
+
+
 (async function () {
   const database = connectToDatabase();
 
-  const collection = await createCollection(
-    database,
-    "PostsTesting",
-  );
+  const collection = await getOrCreateCollection(database, "PostsTesting");
 
   await uploadJsonData(
     collection,
